@@ -38,7 +38,7 @@ void Level5::create_level()
 	spymanager->createSpy()->filename(res->get("bar_wood_bot", "level5"))->x(7.5)->y(2.5625)->width(1)->height(0.125)->createA();
 	spymanager->createSpy()->filename(res->get("wood_square", "level4"))->x(7.5)->y(2.875)->width(0.5)->height(0.5)->typeBody(b2_dynamicBody)->createA();
 	spymanager->createSpy()->filename(res->get("pig_cold", "level4"))->x(7.5)->y(3.375)->R(0.25)->typeBody(b2_dynamicBody)->type(typeSprite::circle)->density(0.5)->createA()->setTag("goal");
-
+	logicgame->setCountMonster(3);
 	delete res;
 }
 void Level5::refresh()

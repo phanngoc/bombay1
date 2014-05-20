@@ -75,7 +75,6 @@ void Level2::create_level()
 	layer->addChild(armature, 2);
 
 	logicgame->setCountMonster(1);
-	logicgame->setLevelPlaying(2);
 }
 void Level2::contact_level(b2Contact* contact)
 {

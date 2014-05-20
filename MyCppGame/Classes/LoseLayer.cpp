@@ -20,7 +20,7 @@ LoseLayer::LoseLayer(ProcessLayer *layer) :layer(layer)
 	ground_menu->setScale(5 * PT_X / ground_menu->getContentSize().width, 4 * PT_Y / ground_menu->getContentSize().height);
 	ground_menu->setPosition(5 * PT_X, 4*PT_Y);
    
-	
+
 	int so_sao = logicgame->getStar();
 	if (so_sao >= 1 && logicgame->getLevelCanPlay() == logicgame->getLevelPlaying()) logicgame->setLevelCanPlay(logicgame->getLevelPlaying() + 1);
 	  logicgame->updateStarOfLevel(so_sao, logicgame->getLevelPlaying());

@@ -2,6 +2,8 @@
 #include "ResourceManager.h"
 ControlLevel::ControlLevel(int level, ProcessLayer* processlayer) :level(level), layer(processlayer)
 {
+	logicgame->refreshMonsterIsKilled();
+	logicgame->setLevelPlaying(level);
 	switch (level)
 	{
 	 case 1: clevel = new Level1(processlayer); break;

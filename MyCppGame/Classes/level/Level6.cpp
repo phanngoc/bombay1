@@ -36,7 +36,7 @@ void Level6::create_level()
 	PRFilledPolygon *filledPolygon = PRFilledPolygon::filledPolygonWithPointsAndTexture(polygonPoints, texture);
 	filledPolygon->setPosition(Point(200, 200));
 	layer->addChild(filledPolygon, 12);
-
+	logicgame->setCountMonster(2);
 	delete res;
 }
 void Level6::refresh()

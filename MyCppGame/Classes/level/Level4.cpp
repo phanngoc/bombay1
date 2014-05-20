@@ -38,7 +38,6 @@ void Level4::create_level()
 	doCallback(0);
 	delete res;
 	logicgame->setCountMonster(3);
-	logicgame->setLevelPlaying(4);
 }
 void Level4::contact_level(b2Contact *contact)
 {

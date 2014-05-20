@@ -1,6 +1,6 @@
 #include "helper.h"
 
-
+//sua ne
 float x(float x)
 {
 	float PT_X = logicgame->getPTX();
